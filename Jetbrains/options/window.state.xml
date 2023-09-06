@@ -1,0 +1,41 @@
+<application>
+  <component name="DimensionService">
+    <location key="find.popup.0.0.1920.1080" x="536" y="86" />
+    <size key="GridCell.Tab.0.left.0.0.1920.1080" width="1839" height="314" />
+    <size key="GridCell.Tab.0.center.0.0.1920.1080" width="1839" height="314" />
+    <size key="GridCell.Tab.0.right.0.0.1920.1080" width="1839" height="314" />
+    <size key="GridCell.Tab.0.bottom.0.0.1920.1080" width="1839" height="314" />
+    <size key="GridCell.Tab.1.left.0.0.1920.1080" width="1839" height="519" />
+    <size key="GridCell.Tab.1.center.0.0.1920.1080" width="1839" height="519" />
+    <size key="GridCell.Tab.1.right.0.0.1920.1080" width="1839" height="519" />
+    <size key="GridCell.Tab.1.bottom.0.0.1920.1080" width="1839" height="519" />
+    <size key="GridCell.Tab.0.left.1920.0.1920.1080" width="1839" height="199" />
+    <size key="GridCell.Tab.0.center.1920.0.1920.1080" width="1839" height="199" />
+    <size key="GridCell.Tab.0.right.1920.0.1920.1080" width="1839" height="199" />
+    <size key="GridCell.Tab.0.bottom.1920.0.1920.1080" width="1839" height="199" />
+    <size key="GridCell.Tab.1.left.1920.0.1920.1080" width="1839" height="303" />
+    <size key="GridCell.Tab.1.center.1920.0.1920.1080" width="1839" height="303" />
+    <size key="GridCell.Tab.1.right.1920.0.1920.1080" width="1839" height="303" />
+    <size key="GridCell.Tab.1.bottom.1920.0.1920.1080" width="1839" height="303" />
+    <size key="find.popup.0.0.1920.1080" width="1111" height="818" />
+  </component>
+  <component name="WindowManager">
+    <frame x="-8" y="-8" width="1936" height="1096" extendedState="6" />
+  </component>
+  <component name="WindowStateApplicationService">
+    <state x="1397" y="812" width="479" height="195" key="ProcessPopupWindow" timestamp="1680118509195">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1050" y="774" width="461" height="169" key="ProcessPopupWindow/0.0.1920.1032/1920.0.1920.1080" timestamp="1677976041991" />
+    <state x="1397" y="812" width="479" height="195" key="ProcessPopupWindow/0.0.1920.1080/1920.0.1920.1080" timestamp="1680118509195" />
+    <state x="192" y="753" width="1709" height="248" key="ProcessPopupWindow/0.30.1920.1050/1920.0.1920.1080" timestamp="1676220492158" />
+    <state width="1104" height="202" key="ShowUsagesActions.dimensionServiceKey" timestamp="1676221564365">
+      <screen x="0" y="30" width="1920" height="1050" />
+    </state>
+    <state width="1104" height="202" key="ShowUsagesActions.dimensionServiceKey/0.30.1920.1050/1920.0.1920.1080" timestamp="1676221564365" />
+    <state x="960" y="488" width="800" height="650" key="WELCOME_SCREEN" timestamp="1675783848382">
+      <screen x="0" y="30" width="1920" height="1050" />
+    </state>
+    <state x="960" y="488" width="800" height="650" key="WELCOME_SCREEN/0.30.1920.1050/1920.0.1920.1080" timestamp="1675783848382" />
+  </component>
+</application>

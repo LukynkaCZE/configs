@@ -1,0 +1,32 @@
+<application>
+  <component name="Trusted.Paths">
+    <option name="TRUSTED_PROJECT_PATHS">
+      <map>
+        <entry key="C:\Users\LukynkaCZE\Downloads\MCP-Reborn-1.19\MCP-Reborn-1.19" value="true" />
+        <entry key="E:\Coding\Advent of Code 2022" value="true" />
+        <entry key="E:\Coding\BlockWars\BlockWarsTools" value="true" />
+        <entry key="E:\Coding\BlockWars\ClientEntities" value="true" />
+        <entry key="E:\Coding\BlockWars\GregJr" value="true" />
+        <entry key="E:\Coding\BlockWars\GregJrBot" value="true" />
+        <entry key="E:\Coding\BlockWars\Skript" value="true" />
+        <entry key="E:\Coding\BlockWars\praccyserver\framework" value="true" />
+        <entry key="E:\Coding\BlockWars\residents" value="true" />
+        <entry key="E:\Coding\BlockWars\residents2" value="true" />
+        <entry key="E:\Coding\BlockWars\residents2\src\main\kotlin\games\blockwars\residents" value="true" />
+        <entry key="E:\Coding\BlockWars\skRayFall" value="true" />
+        <entry key="E:\Coding\BlockWars\skript-advancements" value="true" />
+        <entry key="E:\Coding\CapolloMedia\Pack Auto Deploy" value="true" />
+        <entry key="E:\Coding\CapolloMedia\mc-log-ip-parser" value="true" />
+      </map>
+    </option>
+  </component>
+  <component name="Trusted.Paths.Settings">
+    <option name="TRUSTED_PATHS">
+      <list>
+        <option value="E:\Coding\BlockWars" />
+        <option value="E:\Coding" />
+        <option value="C:\Users\LukynkaCZE\Downloads\MCP-Reborn-1.19" />
+      </list>
+    </option>
+  </component>
+</application>
