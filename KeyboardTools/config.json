@@ -1,0 +1,28 @@
+{
+  "keys": [
+    {
+      "key": "Prior",
+      "replacement": "`",
+      "type": "REPLACE",
+      "modKey": ""
+    },
+    {
+      "key": "PageDown",
+      "replacement": "+",
+      "type": "REPLACE",
+      "modKey": ""
+    },
+    {
+      "key": "Q",
+      "replacement": ";",
+      "type": "REPLACE",
+      "modKey": "LShift"
+    },
+    {
+      "key": "Oem5",
+      "replacement": "'",
+      "type": "REPLACE",
+      "modKey": ""
+    }
+  ]
+}
