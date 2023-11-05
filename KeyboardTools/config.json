@@ -19,6 +19,12 @@
       "modKey": "LShift"
     },
     {
+      "key": "RAlt",
+      "replacement": "'",
+      "type": "RESIZE_WINDOW",
+      "modKey": "LShift"
+    },
+    {
       "key": "Oem5",
       "replacement": "'",
       "type": "REPLACE",
