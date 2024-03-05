@@ -6,12 +6,6 @@ function SetupPersonalGitRepo {
 	Write-Host "Git user set to Personal" -ForegroundColor Green
 }
 
-function SetupCapolloGitRepo {
-	git config user.name "LukynkaCZE"
-	git config user.email "lukynka@capollomedia.com"
-	Write-Host "Git user set to Capollo Media" -ForegroundColor Green
-}
-
 function GoToCodingFolder {E: && cd Coding}
 
 function UpdateKeyboardTools {
@@ -40,14 +34,20 @@ function UpdateConfigs {
 	GetLatestKeyboardToolsConfig
 }
 
+function toWav($file) {
+	$wavfile = $file.split(".")[1]
+	$wavfile = ".$wavfile.wav"
+	ffmpeg -i $file $wavfile
+}
+
 Set-Alias vim neovim
 Set-Alias lg lazygit
 Set-Alias kt KeyboardTools
 Set-Alias vsc code
 Set-Alias git_personal SetupPersonalGitRepo
-Set-Alias git_capollo SetupCapolloGitRepo
 Set-Alias coding GoToCodingFolder
 Set-Alias shh ssh
 Set-Alias dc cd
 Set-Alias kt_update UpdateKeyboardTools
 Set-Alias configs_update UpdateConfigs
+Set-Alias to_wav toWav
