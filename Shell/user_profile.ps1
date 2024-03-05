@@ -39,6 +39,31 @@ function toWav($file) {
 	$wavfile = ".$wavfile.wav"
 	ffmpeg -i $file $wavfile
 }
+function toMp3($file) {
+	$wavfile = $file.split(".")[1]
+	$wavfile = ".$wavfile.mp3"
+	ffmpeg -i $file $wavfile
+}
+function toMp4($file) {
+	$wavfile = $file.split(".")[1]
+	$wavfile = ".$wavfile.mp4"
+	ffmpeg -i $file $wavfile
+}
+function toPng($file) {
+	$wavfile = $file.split(".")[1]
+	$wavfile = ".$wavfile.png"
+	ffmpeg -i $file $wavfile
+}
+function toJpg($file) {
+	$wavfile = $file.split(".")[1]
+	$wavfile = ".$wavfile.jpg"
+	ffmpeg -i $file $wavfile
+}
+function toWebp($file) {
+	$wavfile = $file.split(".")[1]
+	$wavfile = ".$wavfile.webp"
+	ffmpeg -i $file $wavfile
+}
 
 Set-Alias vim neovim
 Set-Alias lg lazygit
@@ -51,3 +76,8 @@ Set-Alias dc cd
 Set-Alias kt_update UpdateKeyboardTools
 Set-Alias configs_update UpdateConfigs
 Set-Alias to_wav toWav
+Set-Alias to_mp3 toMp3
+Set-Alias to_mp4 toMp4
+Set-Alias to_png toPng
+Set-Alias to_jpg toJpg
+Set-Alias to_webp toWebp
