@@ -33,11 +33,17 @@ function UpdateConfigs {
 	UpdatePowershellConfig
 	GetLatestKeyboardToolsConfig
 	UpdateWMConfig
+	UpdateJetbrainsKeymap
+}
+
+function UpdateJetbrainsKeymap {
+	copy C:\Users\Lukynkacze\AppData\Roaming\JetBrains\IdeaIC2023.1\keymaps\LukynkaCZE.xml E:\Coding\configs\Jetbrains\LukynkaCZE_Keymap.xml
+	Write-Host "Done! Jetbrains keymap copied over!" -ForegroundColor Green 
 }
 
 function UpdateWMConfig {
 	copy C:\Users\LukynkaCZE\.glaze-wm\config.yaml E:\Coding\configs\glazewm\config.yaml
-	Write-Host "Done! GlazeWM config updated!" -ForegroundColor Green 
+	Write-Host "Done! GlazeWM config copied over!" -ForegroundColor Green 
 }
 
 function SetTask() {
