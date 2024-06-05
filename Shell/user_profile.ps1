@@ -32,6 +32,12 @@ function GetLatestKeyboardToolsConfig {
 function UpdateConfigs {
 	UpdatePowershellConfig
 	GetLatestKeyboardToolsConfig
+	UpdateWMConfig
+}
+
+function UpdateWMConfig {
+	copy C:\Users\LukynkaCZE\.glaze-wm\config.yaml E:\Coding\configs\glazewm\config.yaml
+	Write-Host "Done! GlazeWM config updated!" -ForegroundColor Green 
 }
 
 function SetTask() {
@@ -62,6 +68,24 @@ function StartTabletDrivers() {
 	Write-Host "Started Open Tablet Drivers.." -ForegroundColor Green 
 }
 
+function SSHToRPI() {
+	ssh pi@192.168.0.181
+}
+
+function SetStreamOverlayToOtographic($bool) {
+	$url = "http://192.168.0.181:6969/spotify/otographic?enabled=false"
+	$Silent = Invoke-WebRequest -Uri $url -ErrorAction SilentlyContinue -WarningAction SilentlyContinue
+	Write-Host "Done! Set otographic enabled to $bool!" -ForegroundColor Green 
+} 
+
+function qtStart {
+	C:\Users\LukynkaCZE\Documents\QuickTwitch\QuickTChat.exe
+}
+
+function qtStop {
+	Start-Process powershell -verb runas -WindowStyle Hidden {E:\Coding\configs\Shell\twitch_chat.ps1}
+}
+
 Set-Alias tablet StartTabletDrivers
 Set-Alias vim neovim
 Set-Alias kscript runKotlin
@@ -82,7 +106,10 @@ Set-Alias to_jpg toJpg
 Set-Alias to_webp toWebp
 Set-Alias set_task SetTask
 Set-Alias clear_task ClearTask
-
+Set-Alias rpi SSHToRPI
+Set-Alias stream_otographic SetStreamOverlayToOtographic
+Set-Alias qt_start qtStart
+Set-Alias qt_stop qtStop
 function toWav($file) {
 	$wavfile = $file.split(".")[1]
 	$wavfile = ".$wavfile.wav"
