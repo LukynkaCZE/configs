@@ -27,6 +27,12 @@
   <action id="Debugger.EditArrayFilter" />
   <action id="Debugger.EditCustomField" />
   <action id="DirDiffMenu.SynchronizeDiff.All" />
+  <action id="EditorCloneCaretAbove">
+    <keyboard-shortcut first-keystroke="ctrl alt up" />
+  </action>
+  <action id="EditorCloneCaretBelow">
+    <keyboard-shortcut first-keystroke="ctrl alt down" />
+  </action>
   <action id="EditorDeleteLine" />
   <action id="EditorLineEnd">
     <keyboard-shortcut first-keystroke="end" />
@@ -72,10 +78,15 @@
     <keyboard-shortcut first-keystroke="escape" />
   </action>
   <action id="KotlinShellExecute" />
+  <action id="MethodDuplicates">
+    <keyboard-shortcut first-keystroke="ctrl h" />
+  </action>
   <action id="NewElement">
     <keyboard-shortcut first-keystroke="alt insert" />
     <keyboard-shortcut first-keystroke="ctrl n" />
   </action>
+  <action id="NextOccurence" />
+  <action id="PreviousOccurence" />
   <action id="QuickJavaDoc">
     <mouse-shortcut keystroke="alt button2" />
   </action>
@@ -84,6 +95,7 @@
     <keyboard-shortcut first-keystroke="shift f6" />
     <keyboard-shortcut first-keystroke="f2" />
   </action>
+  <action id="Replace" />
   <action id="RevealIn">
     <keyboard-shortcut first-keystroke="shift ctrl e" />
   </action>
@@ -98,13 +110,21 @@
   <action id="SmartUnSelect" />
   <action id="SplitChooser.Duplicate" />
   <action id="Table-startEditing" />
+  <action id="Terminal.SearchInCommandHistory" />
   <action id="Terminal.SmartCommandExecution.Run" />
   <action id="Tree-startEditing" />
+  <action id="TypeHierarchy" />
+  <action id="TypeHierarchyBase.BaseOnThisType" />
+  <action id="UsageFiltering.ReadAccess" />
   <action id="UsageFiltering.WriteAccess" />
   <action id="Vcs.Log.ShowTooltip">
     <mouse-shortcut keystroke="alt button2" />
   </action>
   <action id="ViewSource" />
   <action id="XDebugger.SetValue" />
+  <action id="cz.lukynka.twitchchannelpoints.settings.ResetEditorStuffAction">
+    <keyboard-shortcut first-keystroke="alt r" />
+    <keyboard-shortcut first-keystroke="ctrl r" />
+  </action>
   <action id="org.intellij.plugins.markdown.ui.actions.styling.ToggleBoldAction" />
 </keymap>

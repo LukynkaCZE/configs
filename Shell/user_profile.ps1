@@ -37,7 +37,7 @@ function UpdateConfigs {
 }
 
 function UpdateJetbrainsKeymap {
-	copy C:\Users\Lukynkacze\AppData\Roaming\JetBrains\IdeaIC2023.1\keymaps\LukynkaCZE.xml E:\Coding\configs\Jetbrains\LukynkaCZE_Keymap.xml
+	Copy-Item C:\Users\Lukynkacze\AppData\Roaming\JetBrains\IdeaIC2024.1\keymaps\LukynkaCZE.xml E:\Coding\configs\Jetbrains\LukynkaCZE.xml
 	Write-Host "Done! Jetbrains keymap copied over!" -ForegroundColor Green 
 }
 
@@ -92,6 +92,12 @@ function qtStop {
 	Start-Process powershell -verb runas -WindowStyle Hidden {E:\Coding\configs\Shell\twitch_chat.ps1}
 }
 
+function Dockyard {
+	E:
+	coding && cd Kotlin/Dockyard
+}
+
+Set-Alias dockard Dockyard
 Set-Alias tablet StartTabletDrivers
 Set-Alias vim neovim
 Set-Alias kscript runKotlin
