@@ -108,11 +108,17 @@ workspaces:
     bind_to_monitor: 1
     keep_alive: true
   - name: "4"
-    bind_to_monitor: 2
+    bind_to_monitor: 1
     keep_alive: true
   - name: "5"
+    bind_to_monitor: 1
+    keep_alive: true
   - name: "6"
+    bind_to_monitor: 1
+    keep_alive: true
   - name: "7"
+    bind_to_monitor: 2
+    keep_alive: true
   - name: "8"
   - name: "9"
 
@@ -125,14 +131,14 @@ window_rules:
   - command: "ignore"
     match_process_name: "QuickTChat"
 
-
-  # Launches system dialogs as floating by default (eg. File Explorer save/open dialog).
   - command: "set floating"
     match_class_name: "#32770"
 
-  # Some applications (eg. Steam) have borders that extend past the normal border size.
   - command: "resize borders 0px -7px -7px -7px"
     match_process_name: "steam"
+
+  - command: "set floating"
+    match_class_name: "/#32770|SunAwtDialog/"
 
 binding_modes:
   - name: "resize"
@@ -257,6 +263,7 @@ keybindings:
     binding: "Alt+D"
   - command: "move workspace down"
     binding: "Alt+S"
+
 
   # Move focused window to a workspace defined in `workspaces` config.
   - commands: ["move to workspace 1", "focus workspace 1"]
