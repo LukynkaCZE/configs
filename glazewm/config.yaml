@@ -24,6 +24,7 @@ surface0: &surface0 "#313244"
 base: &base "#1e1e2e"
 mantle: &mantle "#181825"
 crust: &crust "#11111b"
+block: &black "#000000"
 
 gaps:
   inner_gap: 15
@@ -47,11 +48,16 @@ bar:
   border_radius: "0"
   components_left:
     - type: "workspaces"
-      focused_workspace_background: *surface0
+      focused_workspace_background: *mauve
+      focused_workspace_foreground: *crust
       displayed_workspace_background: "#00000033"
       default_workspace_background: "transparent"
+      border_width: "2 2 2 2"
+      border_radius: "5"
+      border_color: *mauve
   components_center:
     - type: "window title"
+      foreground: *text 
   components_right:
     - type: "cpu"
       label: "CPU: {percent_usage}%"
@@ -69,10 +75,10 @@ bar:
       margin: "0 0 0 20px"
       foreground: *yellow
     - type: "volume"
-      label_low: "🔊{volume_level}%"
-      label_medium: "🔊{volume_level}%"
-      label_high: "🔊{volume_level}%"
-      label_mute: "🔊{volume_level}%"
+      label_low: "🔊 {volume_level}%"
+      label_medium: "🔊 {volume_level}%"
+      label_high: "🔊 {volume_level}%"
+      label_mute: "🔊 {volume_level}%"
       foreground: *green
       margin: "0 0 0 20px"
     - type: "weather"
@@ -94,8 +100,14 @@ bar:
     - type: "clock"
       # Documentation on formatting date/time string:
       # https://learn.microsoft.com/en-us/dotnet/standard/base-types/custom-date-and-time-format-strings
-      time_formatting: "hh:mm tt  ddd MMM d "
+      time_formatting: "⌛ hh:mm tt  🗓️ ddd MMM d"
       margin: "0 0 0 20px"
+      border_width: "2 2 2 2"
+      border_radius: "5"
+      border_color: *surface0
+      background: *surface0
+      padding: "0px 6px"
+      foreground: *text
 
 workspaces:
   - name: "1"
@@ -139,6 +151,9 @@ window_rules:
 
   - command: "set floating"
     match_class_name: "/#32770|SunAwtDialog/"
+
+  - command: "set floating"
+    match_process_name: "Modrinth App"
 
 binding_modes:
   - name: "resize"
