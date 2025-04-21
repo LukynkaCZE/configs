@@ -8,30 +8,14 @@ function SetupPersonalGitRepo {
 
 function GoToCodingFolder {E: && cd Coding}
 
-function UpdateKeyboardTools {
-	if (Get-Process -Name KeyboardTools -ErrorAction SilentlyContinue) {
-		KeyboardTools stop
-	}
-	Start-Sleep -Seconds 0.3
-	copy E:\Coding\C#\KeyboardTools\KeyboardTools\bin\Release\net7.0-windows\win-x64\publish\KeyboardTools.exe C:\Users\LukynkaCZE\Documents\KeyboardTools\KeyboardTools.exe
-	Start-Sleep -Seconds 0.3
-	KeyboardTools start
-	Write-Host "Done! Keyboard Tools Updated" -ForegroundColor Green
-}
-
 function UpdatePowershellConfig {
 	copy E:\Coding\configs\Shell\user_profile.ps1 C:\Users\LukynkaCZE\.config\powershell\user_profile.ps1 
 	Write-Host "Done! Powershell config updated!" -ForegroundColor Green 
 }
 
-function GetLatestKeyboardToolsConfig {
-	copy C:\Users\LukynkaCZE\Documents\KeyboardTools\config.json E:\Coding\configs\KeyboardTools\config.json
-	Write-Host "Done! Copied over latest Keyboard Tools config file" -ForegroundColor Green 
-}
 
 function UpdateConfigs {
 	UpdatePowershellConfig
-	GetLatestKeyboardToolsConfig
 	UpdateWMConfig
 	UpdateJetbrainsKeymap
 }
@@ -97,18 +81,27 @@ function Dockyard {
 	coding && cd Kotlin/Dockyard
 }
 
+function KeyboardToolsManager {
+	if($args.Contains("start")) {
+		Start-Process -FilePath "C:\Users\LukynkaCZE\Documents\KeyboardTools.exe" -WindowStyle Hidden
+		Write-Host "Done! Started Keyboard Tools" -ForegroundColor Green
+	} else {
+		Stop-Process -Name "KeyboardTools" -Force
+		Write-Host "Done! Killed Keyboard Tools" -ForegroundColor Red
+	}
+}
+
 Set-Alias dockard Dockyard
 Set-Alias tablet StartTabletDrivers
 Set-Alias vim neovim
 Set-Alias kscript runKotlin
 Set-Alias lg lazygit
-Set-Alias kt KeyboardTools
+Set-Alias kt KeyboardToolsManager
 Set-Alias vsc code
 Set-Alias git_personal SetupPersonalGitRepo
 Set-Alias coding GoToCodingFolder
 Set-Alias shh ssh
 Set-Alias dc cd
-Set-Alias kt_update UpdateKeyboardTools
 Set-Alias configs_update UpdateConfigs
 Set-Alias to_wav toWav
 Set-Alias to_mp3 toMp3

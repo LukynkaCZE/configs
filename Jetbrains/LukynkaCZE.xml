@@ -11,6 +11,10 @@
     <keyboard-shortcut first-keystroke="alt 1" />
     <keyboard-shortcut first-keystroke="ctrl b" />
   </action>
+  <action id="ActivateRunToolWindow">
+    <keyboard-shortcut first-keystroke="alt 4" />
+    <keyboard-shortcut first-keystroke="ctrl p" />
+  </action>
   <action id="Arrangement.Rule.Edit" />
   <action id="BookmarksView.Rename" />
   <action id="ChangesView.Rename">
@@ -29,7 +33,11 @@
   <action id="Console.SplitLine" />
   <action id="Debugger.EditArrayFilter" />
   <action id="Debugger.EditCustomField" />
+  <action id="Diff.ApplyLeftSide" />
   <action id="DirDiffMenu.SynchronizeDiff.All" />
+  <action id="Documentation.Forward">
+    <mouse-shortcut keystroke="button5" />
+  </action>
   <action id="EditorCloneCaretAbove">
     <keyboard-shortcut first-keystroke="ctrl alt up" />
   </action>
@@ -45,9 +53,13 @@
     <keyboard-shortcut first-keystroke="home" />
     <keyboard-shortcut first-keystroke="ctrl #100016f" />
   </action>
-  <action id="EditorSelectWord" />
+  <action id="EditorSelectWord">
+    <keyboard-shortcut first-keystroke="ctrl #10000fa" />
+  </action>
   <action id="EditorSplitLine" />
-  <action id="EditorUnSelectWord" />
+  <action id="EditorUnSelectWord">
+    <keyboard-shortcut first-keystroke="ctrl right_parenthesis" />
+  </action>
   <action id="ExpandRegion">
     <keyboard-shortcut first-keystroke="ctrl add" />
     <keyboard-shortcut first-keystroke="ctrl equals" />
@@ -56,8 +68,19 @@
   <action id="ExternalToolsGroup">
     <keyboard-shortcut first-keystroke="shift ctrl w" />
   </action>
+  <action id="FileChooser.GoForward">
+    <mouse-shortcut keystroke="button5" />
+  </action>
   <action id="FileChooser.NewFolder">
     <keyboard-shortcut first-keystroke="alt insert" />
+  </action>
+  <action id="FileChooser.TogglePathBar" />
+  <action id="FindUsages">
+    <keyboard-shortcut first-keystroke="alt f7" />
+    <keyboard-shortcut first-keystroke="ctrl alt r" />
+  </action>
+  <action id="Forward">
+    <mouse-shortcut keystroke="button5" />
   </action>
   <action id="Git.Rename.Local.Branch">
     <keyboard-shortcut first-keystroke="shift f6" />
@@ -73,7 +96,9 @@
   <action id="GotoDeclarationOnly">
     <keyboard-shortcut first-keystroke="ctrl enter" />
   </action>
-  <action id="GotoNextError" />
+  <action id="GotoNextError">
+    <keyboard-shortcut first-keystroke="ctrl alt right" />
+  </action>
   <action id="GuiDesigner.EditComponent" />
   <action id="GuiDesigner.EditGroup" />
   <action id="GuiDesigner.QuickJavadoc">
@@ -94,6 +119,7 @@
     <keyboard-shortcut first-keystroke="ctrl n" />
   </action>
   <action id="NextOccurence" />
+  <action id="ParameterInfo" />
   <action id="PreviousOccurence" />
   <action id="QuickJavaDoc">
     <mouse-shortcut keystroke="alt button2" />

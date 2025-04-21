@@ -1,0 +1,1 @@
+Start-Process -FilePath "C:\Users\LukynkaCZE\Documents\KeyboardTools.exe" -WindowStyle Hidden
